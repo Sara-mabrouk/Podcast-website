@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <header class="active" data-header>
+        <div class="container">
+
+            <!-- 
+            - overlay
+          -->
+            <div class="overlay" data-overlay></div>
+
+            <a href="#" class="logo">
+                <img src="images/new.png" alt="Podcast" width="40" height="40">
+                <h2 class="logo-name">Podcast</h2>
+            </a>
+
+            <button class="nav-toggle-btn" data-nav-toggle-btn>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html/#hero" class="navbar-link">Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#podcast" class="navbar-link">Podcast</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#contact" class="navbar-link">Contact</a>
+                    </li>
+
+                </ul>
+
+                <div class="navbar-actions">
+
+                    <button class="navbar-btn">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+
+                    <button class="navbar-btn">
+                        <a href="login.html"><ion-icon name="log-in-outline"> </ion-icon></a>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="r1">
+        <form action="" id="createaccount">
+            <h1 class="s2" style="text-align: center;">Create Your Account</h1>
+            <div class="form__message form__message-error"></div>
+            <div class="form__input-group">
+                <label for="">Name</label><br>
+                <input type="text" placeholder="Name" id="signupUsername" class="form__input" autofocus>
+                <div class="form__input-errormess"></div>
+            </div>
+
+
+            <div class="form__input-group">
+                <label for="">Email Address</label><br>
+                <input type="email" placeholder="Email address" class="form__input" autofocus>
+                <div class="form__input-errormess"></div>
+            </div>
+
+            <div class="form__input-group">
+                <label for="">Password </label><br>
+                <input type="password" placeholder="password" class="form__input" autofocus>
+                <div class="form__input-errormess"></div>
+            </div>
+
+            <div class="form__input-group">
+                <label for="">Confirm Password </label><br>
+                <input type="password" placeholder="Confirm Password " class="form__input" autofocus>
+                <div class="form__input-errormess"></div>
+            </div>
+            <button class="btn1" type="submit">Create Account</button>
+            <p class="p2"> Already have an account? <a class="form__link" href="login.html">Sign In</a> </p>
+        </form>
+
+    </div>
+    </article>
+    </main>
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="copyright">
+                &copy; 2023-2024 <a href="https://kfs.edu.eg/">kafrelsheikh university</a>. All Rights Reserved
+            </p>
+        </div>
+    </div>
+
+    </footer>
+    <a href="#top" class="go-top" data-go-top>
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+    <script src="JS/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
