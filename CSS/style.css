@@ -233,8 +233,7 @@ header .container {
 }
 
 .navbar-link:is(:hover, :focus) {
-    background: hsl(0, 0%, 100%);
-}
+    background: hsl(255.79deg 15.2% 49.02%);}
 
 .navbar-actions {
     display: flex;
@@ -251,8 +250,7 @@ header .container {
 
 .navbar-btn:is(:hover, :focus),
 .navbar-actions .btn:is(:hover, :focus) {
-    background: hsla(0, 0%, 100%, 0.1);
-}
+background: hsl(255.79deg 15.2% 49.02%);}
 
 .overlay {
     position: fixed;
@@ -974,9 +972,9 @@ header .container {
 }
 
 .s1 {
-    height: 750px;
-    width: 700px;
-    margin: 300px auto;
+    height: 50%;
+    width: 50%;
+    margin: auto auto ;
     padding: 20px;
     border-radius: 5px;
     border: 1px solid gray;
@@ -1000,18 +998,18 @@ label {
     margin: 10px 0;
     height: 50px;
     outline: 0;
-    background-color: hsl(252, 100%, 12%);
+    background-color: hsl(0, 0%, 100%);
     border: 1px solid gray;
     border-radius: 5px;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 
 [type=password] {
-    padding: 0 10px;
+    /* padding: 0 10px; */
     margin: 10px 0;
     outline: 0;
     height: 50px;
-    background-color: hsl(252, 100%, 12%);
+    background-color: hsl(0, 0%, 100%);
     border: 1px solid gray;
     border-radius: 5px;
 }
@@ -1019,7 +1017,7 @@ label {
 .btn1 {
     color: white;
     height: 70px;
-    background: hsl(221, 100%, 50%);
+    background: hsl(287, 88%, 52%);
     width: 150px;
     border-radius: 5px;
     font-size: 20px;
@@ -1029,6 +1027,7 @@ label {
 .p4 {
     padding: 20px;
     font-size: 20px;
+    text-align: center;
 }
 
 .p2 a {
@@ -1088,12 +1087,13 @@ label {
     color: var(--color-error);
 }
 
-.form__link {
-    color: white;
+.form__link , #linkCreateAccount{
+    color: rgba(133, 67, 161, 0.473);
     text-decoration: none;
     cursor: pointer;
 }
 
 .form__link:hover {
     text-decoration: underline;
+
 }
