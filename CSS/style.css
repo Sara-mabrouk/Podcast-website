@@ -972,22 +972,30 @@ background: hsl(255.79deg 15.2% 49.02%);}
 }
 
 .s1 {
-    height: 50%;
+    /* height: 50%;
     width: 50%;
     margin: auto auto ;
     padding: 20px;
+    border-radius: 5px;
+    border: 1px solid gray; */
+
+    height: 600px;
+    width: 700px;
+    margin: 5% auto;
+    /* padding: 20px; */
     border-radius: 5px;
     border: 1px solid gray;
 }
 
 .s2 {
-    padding: 50px 0;
+    /* padding: 50px 0; */
     text-align: center;
 }
 
 .p1 {
-    padding: 20px 0;
+    /* padding: 20px 0; */
     font-size: 30px;
+    text-align: center;
 }
 
 label {
@@ -1039,7 +1047,7 @@ label {
     padding: 0 10px;
     margin: 10px 0;
     height: 50px;
-    background-color: hsl(252, 100%, 12%);
+    background-color: hsl(0, 0%, 100%);
     outline: 0;
     border: 1px solid gray;
     border-radius: 5px;
@@ -1056,6 +1064,7 @@ label {
 
 .r1 .p1 {
     font-size: 16px;
+    
 }
 
 .r1 .p3 {
@@ -1087,7 +1096,7 @@ label {
     color: var(--color-error);
 }
 
-.form__link , #linkCreateAccount{
+.form__link , #linkCreateAccount ,#si{
     color: rgba(133, 67, 161, 0.473);
     text-decoration: none;
     cursor: pointer;
