@@ -22,7 +22,7 @@
     --fs-4: 15px;
     --fw-500: 500;
     --fw-700: 700;
-    
+
     /* transition */
 
     --transition: 0.25s ease-in-out;
@@ -54,6 +54,7 @@ input,
 button,
 ion-icon {
     display: block;
+    color: var(--white);
 }
 
 button {
@@ -142,6 +143,7 @@ body {
     font-size: var(--fs-2);
     line-height: 1.5;
 }
+
 /* Header */
 
 header {
@@ -190,15 +192,13 @@ header .container {
     transition: 0.15s ease-in;
 }
 
-.gif-wrapper {
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-}
-
 .gif-wrapper img {
     max-width: 100%;
     max-height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
 }
 
 .navbar.active {
@@ -233,7 +233,8 @@ header .container {
 }
 
 .navbar-link:is(:hover, :focus) {
-    background: hsl(255.79deg 15.2% 49.02%);}
+    background: hsl(255.79deg 15.2% 49.02%);
+}
 
 .navbar-actions {
     display: flex;
@@ -250,7 +251,8 @@ header .container {
 
 .navbar-btn:is(:hover, :focus),
 .navbar-actions .btn:is(:hover, :focus) {
-background: hsl(255.79deg 15.2% 49.02%);}
+    background: hsl(255.79deg 15.2% 49.02%);
+}
 
 .overlay {
     position: fixed;
@@ -281,6 +283,7 @@ background: hsl(255.79deg 15.2% 49.02%);}
     font-size: var(--fs-4);
     line-height: 1.8;
     margin-bottom: 20px;
+    /* text-align: center; */
 }
 
 .hero .btn-primary {
@@ -573,8 +576,8 @@ background: hsl(255.79deg 15.2% 49.02%);}
     color: var(--heliotrope-gray);
     font-size: var(--fs-4);
     text-align: center;
-    line-height: 1.8;
-    padding-block: 20px;
+    /* line-height: 1.8;
+    padding-block: 20px; */
 }
 
 .copyright a {
@@ -589,7 +592,7 @@ background: hsl(255.79deg 15.2% 49.02%);}
 /* UPP */
 .go-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 5px;
     right: 20px;
     width: 43px;
     height: 43px;
@@ -611,7 +614,7 @@ background: hsl(255.79deg 15.2% 49.02%);}
     pointer-events: all;
 }
 
-.go-top:is(:hover,:focus) {
+.go-top:is(:hover, :focus) {
     /* --blue-ryb: hsl(228, 38%, 47%); */
     background: hsla(321, 64%, 48%, 0.657);
 
@@ -622,10 +625,6 @@ background: hsl(255.79deg 15.2% 49.02%);}
 /*responsive for larger than 550px*/
 
 @media (min-width: 550px) {
-
-    /**
-   * REUSED STYLE
-   */
     .container {
         max-width: 500px;
         margin-inline: auto;
@@ -678,16 +677,10 @@ background: hsl(255.79deg 15.2% 49.02%);}
         gap: 25px;
     }
 
-    /**
-   * PODCAST
-   */
     .podcast-list {
         grid-template-columns: 1fr 1fr;
     }
 
-    /**
-   * NEWSLETTER
-   */
     .newsletter-card {
         padding: 50px;
     }
@@ -707,10 +700,6 @@ background: hsl(255.79deg 15.2% 49.02%);}
     .newsletter-card .input-field {
         padding-right: 155px;
     }
-
-    /**
-   * FOOTER
-   */
     .footer-top .container {
         display: flex;
         justify-content: center;
@@ -797,7 +786,7 @@ background: hsl(255.79deg 15.2% 49.02%);}
     }
 
     .navbar-link:is(:hover, :focus) {
-        background: var(--gradient);
+        background: hsl(310.28deg 91.64% 9.1% / 94%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
@@ -860,32 +849,22 @@ background: hsl(255.79deg 15.2% 49.02%);}
     }
 }
 
-
-/**
- * responsive for larger than 1200px
- */
+/* responsive for larger than 1200px */
 
 @media (min-width: 1200px) {
     :root {
-        /**
-     * spacing
-     */
+
         --section-padding: 60px;
     }
 
-    /**
-   * REUSED STYLE
-   */
     .container {
         max-width: 1200px;
     }
 
-    /**
-   * HEADER
-   */
+    /* 
     header {
         padding-block: 25px;
-    }
+    } */
 
     header .container {
         max-width: 1300px;
@@ -899,9 +878,6 @@ background: hsl(255.79deg 15.2% 49.02%);}
         margin-left: 20px;
     }
 
-    /**
-   * HERO
-   */
     .hero {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -957,6 +933,7 @@ background: hsl(255.79deg 15.2% 49.02%);}
     .footer-link-title {
         --fs-2: 22px;
         margin-bottom: 30px;
+
     }
 
     .social-title {
@@ -979,12 +956,16 @@ background: hsl(255.79deg 15.2% 49.02%);}
     border-radius: 5px;
     border: 1px solid gray; */
 
-    height: 600px;
-    width: 700px;
+    height: 501px;
+    width: 563px;
     margin: 5% auto;
-    /* padding: 20px; */
     border-radius: 5px;
-    border: 1px solid gray;
+    border: 1px solid rgb(162, 31, 232);
+}
+
+form {
+    padding: 2rem;
+
 }
 
 .s2 {
@@ -994,12 +975,12 @@ background: hsl(255.79deg 15.2% 49.02%);}
 
 .p1 {
     /* padding: 20px 0; */
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
 }
 
 label {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 [type=text] {
@@ -1022,18 +1003,27 @@ label {
     border-radius: 5px;
 }
 
-.btn1 {
+.btn1,
+.btn2 {
     color: white;
-    height: 70px;
-    background: hsl(287, 88%, 52%);
-    width: 150px;
+    height: 38px;
+    /* background: hsl(287, 88%, 52%); */
+    width: 114px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 17px;
+    background: rgba(133, 67, 161, 0.473);
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.btn2 {
+    width: 180px;
 }
 
 .p2,
 .p4 {
-    padding: 20px;
     font-size: 20px;
     text-align: center;
 }
@@ -1044,7 +1034,6 @@ label {
 }
 
 [type=email] {
-    padding: 0 10px;
     margin: 10px 0;
     height: 50px;
     background-color: hsl(0, 0%, 100%);
@@ -1054,9 +1043,9 @@ label {
 }
 
 .r1 {
-    height: 900px;
-    width: 700px;
-    margin: 300px auto;
+    height: 583px;
+    width: 660px;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 5px;
     border: 1px solid gray;
@@ -1064,7 +1053,7 @@ label {
 
 .r1 .p1 {
     font-size: 16px;
-    
+
 }
 
 .r1 .p3 {
@@ -1073,7 +1062,9 @@ label {
 
 .navbar-btn a {
     color: white;
+    margin-top: 17px;
 }
+
 
 .form__message {
     margin-bottom: 10px;
@@ -1096,7 +1087,9 @@ label {
     color: var(--color-error);
 }
 
-.form__link , #linkCreateAccount ,#si{
+.form__link,
+#linkCreateAccount,
+#si {
     color: rgba(133, 67, 161, 0.473);
     text-decoration: none;
     cursor: pointer;
