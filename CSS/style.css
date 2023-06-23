@@ -283,7 +283,6 @@ header .container {
     font-size: var(--fs-4);
     line-height: 1.8;
     margin-bottom: 20px;
-    /* text-align: center; */
 }
 
 .hero .btn-primary {
