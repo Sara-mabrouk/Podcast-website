@@ -631,7 +631,7 @@ header .container {
 .contact .overlay {
     height: 100%;
     width: 100%;
-    background-color: rgba(218, 218, 218, 0.16);
+    background-color:var(--gradient);
     position: absolute;
     left: 0;
     top: 0;
@@ -663,7 +663,7 @@ header .container {
 .contact h2 {
     font-weight: bold;
     font-size: 30px;
-    color: var(--main-color);
+    color: var(--white);
     margin: 0 0 60px;
     text-align: center;
 }
@@ -710,7 +710,7 @@ header .container {
     padding: 10px;
     height: 45px;
     width: 400px;
-    background-color: var(--sec-color);
+    /* background-color: var(--dark-violet); */
     border: 2px solid;
     outline: none;
     border-radius: 10px;
@@ -787,8 +787,8 @@ header .container {
 .contact .section .container form .right-area textarea {
     width: 450px;
     height: 155px;
-    background-color: transparent;
-    background-color: var(--sec-color9);
+    /* background-color: transparent; */
+    /* background-color: var(--heliotrope-gray); */
     border: 2px solid;
     outline: none;
     padding: 10px;
@@ -846,7 +846,7 @@ header .container {
 .contact .section .container form .right-area input[type=submit] {
     padding: 10px;
     height: 45px;
-    background-color: var(--main-color);
+    background-color: rgba(133, 67, 161, 0.473);
     color: #fff;
     outline: none;
     border: none;
