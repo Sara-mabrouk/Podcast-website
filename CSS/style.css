@@ -622,7 +622,7 @@ header .container {
 
 
 .contact {
-    background:var(--gradient);
+    /* background:var(--gradient); */
     background-size: cover;
     position: relative;
     padding-top:15px;
@@ -1221,6 +1221,7 @@ label {
     border: 1px solid gray;
     border-radius: 5px;
     /* padding: 0 10px; */
+    color: black;
 }
 
 [type=password] {
@@ -1231,6 +1232,8 @@ label {
     background-color: hsl(0, 0%, 100%);
     border: 1px solid gray;
     border-radius: 5px;
+    color: black;
+
 }
 
 .btn1,
